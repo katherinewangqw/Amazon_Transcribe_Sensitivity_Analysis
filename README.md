@@ -132,7 +132,9 @@ There are some limitations discovered when experimenting AWS Transcribe. First o
 
 # Citations
 https://www.rtinsights.com/real-time-translation-machine-challenges/
+
 https://www.dreamstime.com/photos-images/music-nerd.html
+
 https://www.izotope.com/en/learn/digital-audio-basics-sample-rate-and-bit-depth.html
 
 Created in Deepnote
