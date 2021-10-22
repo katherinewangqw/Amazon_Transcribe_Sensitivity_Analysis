@@ -5,10 +5,9 @@ Utilize AWS services (SageMaker, S3 Storage Bucket) to conduct Sensitivity Analy
 
 ## Table of contents
 
-- [350 Fontana Blog Post](#350-Fontana-Blog-Post)
 - [AWS Transcribe Overview](#AWS-Transcribe-Overview)
 - [Motivation & Aims of the Project](#Motivation-&-Aims-of-the-Project)
-- [Method](#Method)
+- [Analysis](#Analysis)
   * [Setup](#Setup)
   * [Steps of Using AWS Transcribe](#Steps-of-Using-AWS-Transcribe)
   * [Lyrics Fetch and Levenshtein Distance](#Lyrics-Fetch-and-Levenshtein-Distance)
@@ -37,17 +36,17 @@ Among the factors of a song file that could influence the accuracy of Amazon Tra
 
 Accuracy and precision build credibility; so, it is vital to test how accurate AWS Transcribe is before applying it to music apps like Spotify. In order to test how accurately AWS Transcribe can transcribe songs to lyrics, we compute the Levenshtein Distance (LD) -- a number that informs people how similar two sequences are. The lower the given number is, the more similar the two sequences are. LD is named after Russian Scientist Vladimir Levenshtein who invented this algorithm in 1965. It is a popular and useful technique that has been used in fields like speech recognition, DNA analysis, and plagiarism detection. As we are comparing the generated lyrics with the correct lyrics, we will apply this algorithm as well. Matrices will be constructed to compute the LD; after that, we will analyze the numbers and determine whether AWS Transcribe can accurately generate lyrics.
 
-# Method
+# Analysis
 
 ## Setup
 
-### Initialization
+#### Initialization
 Run _Initialize.ipynb_ first and follow the instructions for pre-analysis data preparation
 
-### Transcribe
+#### Transcribe
 Run _Transcribe.ipynb_ for audio transcription using Amazon Transcribe, and retrieve corresponding lyrics from the lyrics.ovh API. Check here for API [Documentation](https://lyricsovh.docs.apiary.io/#)
 
-### Sample Data
+#### Sample Data
 data.csv, test_copy.csv, and tempo.csv are provided.
 
 ------
