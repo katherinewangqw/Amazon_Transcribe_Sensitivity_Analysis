@@ -58,13 +58,13 @@ test_copy.csv - processed data.csv, containing transcription accuracy calculated
 tempo.csv - contains song title, artist, and tempo
 
 ## Steps of Using AWS Transcribe
-Log in to your AWS account and select **amazon sagemaker**
+1. Log in to your AWS account and select **amazon sagemaker**
 ![step1](/images/step1.JPG)
-Click on **IAM role ARN** and you will see the following webpage
+2. Click on **IAM role ARN** and you will see the following webpage
 ![step2](/images/step2.JPG)
-Search for **transcribe**
+3. Search for **transcribe**
 ![step3](/images/step3.JPG)
-Select the policy named **AmazonTranscribeFullAccess** and attach it to your notebook instance
+4. Select the policy named **AmazonTranscribeFullAccess** and attach it to your notebook instance
 ![step4](/images/step4.JPG)
 
 ## Lyrics Fetch and Levenshtein Distance
