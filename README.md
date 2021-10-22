@@ -1,7 +1,5 @@
 # Amazon Transcribe Sensitivity Analysis
-Audio is a clear form of communication, but transcripts reinforce it. In this blog post, we would show how Amazon Transcribe is used to improve your experience of listening to music with lyrics. We start with an overview of the AWS Transcribe function, explained how various data and songs are collected and analyze data, and discussed real-word application of AWS Transcribe that facilitates our day to day.
-
-Utilize AWS services (SageMaker, S3 Storage Bucket) to conduct Sensitivity Analysis on Amazon Transcribe Machine Learning Model
+Audio is a clear form of communication, but transcripts reinforce it. In this blog post, we would show how Amazon Transcribe is used to improve your experience of listening to music with lyrics. In the following sections, we will utilize AWS services (SageMaker, S3 Storage Bucket) to conduct Sensitivity Analysis on Amazon Transcribe Machine Learning Model. We start with an overview of the AWS Transcribe function, explained how various data and songs are collected and analyze data, and discussed real-word application of AWS Transcribe that facilitates our day to day.
 
 ## Table of contents
 
