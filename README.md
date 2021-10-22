@@ -7,14 +7,14 @@ Utilize AWS services (SageMaker, S3 Storage Bucket) to conduct Sensitivity Analy
 
 - [350 Fontana Blog Post](#350-Fontana-Blog-Post)
 - [AWS Transcribe Overview](#AWS-Transcribe-Overview)
-- [Motivation & Aims of the Project](#Motivation & Aims of the Project)
+- [Motivation & Aims of the Project](#Motivation-&-Aims-of-the-Project)
 - [Method](#Method)
   * [Setup](#Setup)
-  * [Steps of Using AWS Transcribe](#Steps of Using AWS Transcribe)
-  * [Lyrics Fetch and Levenshtein Distance](#Lyrics Fetch and Levenshtein Distance)
-  * [Production and Analysis](#Production and Analysis)
-  * [Architecture Overview](#Architecture Overview)
-- [Conclusion & Discussions](#Conclusion & Discussions)
+  * [Steps of Using AWS Transcribe](#Steps-of-Using-AWS-Transcribe)
+  * [Lyrics Fetch and Levenshtein Distance](#Lyrics-Fetch-and-Levenshtein-Distance)
+  * [Production and Analysis](#Production-and-Analysis)
+  * [Architecture Overview](#Architecture-Overview)
+- [Conclusion & Discussions](#Conclusion-&-Discussions)
 - [Citations](#citations)
 
 # AWS Transcribe Overview
