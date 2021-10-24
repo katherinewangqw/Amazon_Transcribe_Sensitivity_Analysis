@@ -5,7 +5,7 @@ Audio is a clear form of communication, but transcripts reinforce it. In this bl
 ## Table of contents
 
 - [AWS Transcribe Overview](#AWS-Transcribe-Overview)
-- [Motivation & Aims of the Project](#Motivation-&-Aims-of-the-Project)
+- [Motivation & Aims of the Project](#Motivation-\&-Aims-of-the-Project)
 - [Analysis](#Analysis)
   * [Setup](#Setup)
   * [Steps of Using AWS Transcribe](#Steps-of-Using-AWS-Transcribe)
