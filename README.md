@@ -5,14 +5,14 @@ Audio is a clear form of communication, but transcripts reinforce it. In this bl
 ## Table of contents
 
 - [AWS Transcribe Overview](#AWS-Transcribe-Overview)
-- [Motivation & Aims of the Project](#Motivation-\&-Aims-of-the-Project)
+- [Motivation and Aims of the Project](#Motivation-and-Aims-of-the-Project)
 - [Analysis](#Analysis)
   * [Setup](#Setup)
   * [Steps of Using AWS Transcribe](#Steps-of-Using-AWS-Transcribe)
   * [Lyrics Fetch and Levenshtein Distance](#Lyrics-Fetch-and-Levenshtein-Distance)
   * [Production and Analysis](#Production-and-Analysis)
   * [Architecture Overview](#Architecture-Overview)
-- [Conclusion & Discussions](#Conclusion-&-Discussions)
+- [Conclusion and Discussions](#Conclusion-and-Discussions)
 - [Citations](#citations)
 
 # AWS Transcribe Overview
@@ -21,7 +21,7 @@ Amazon Transcribe utilizes a deep learning process called automatic speech recog
 
 ![transcribelogo](/images/transcribe.png)
 
-# Motivation & Aims of the Project
+# Motivation and Aims of the Project
 
 When comparing Apple Music and Spotify, Apple music took the lead in its live lyrics feature, which provides an on-screen, karaoke-style feature. It is not until March 2021 did Spotify finally released the new lyrics feature on its platform, partnered with Genius and Musicmatch. However, as the new lyrics feature is still in its testing phase, it has not covered all the songs on the platform. Indeed, Spotify has been receiving complaints from users that they cannot access the lyrics completely. So, unfortunately, users have to wait for the new real-time lyrics feature to catch up with the great amount of music available on the platform.
 Imagine a situation that you fall in love with a blue song in a foreign language and you are desperate to learn what it expresses, or, that you got ignited by a rap song but you can’t figure out what it’s rapping unless you have a real-time lyrics book on hand. In such situations, you would get mad staring at the blank lyrics page. That brings us the inspiration to generate lyrics on our own. Fortunately, with the help of Amazon Transcribe, we are able to achieve this goal.
@@ -124,7 +124,7 @@ It is interesting to observe that Amazon Transcribe works best with songs in rap
 
 To summarize our project, as illustrated with the AWS architecture graph above, we collected and processed multiple audio data, stored them through S3 bucket, and used AWS Transcribe with Amazon Sagemaker as a channel to perform our analysis. Finally, outputs are passed on to final synthesis and analysis.
 
-# Conclusion & Discussions
+# Conclusion and Discussions
 In this blog post, we illustrated how to use Amazon Transcribe to genereate lyrics from different songs and tested its accuracy and reliability.
 As shown in the output, at a significant level of 99%, correlations between bitrate and accuracy and sample rate and accuracy are found whereas no significant correlation between tempo and accuracy is shown. For different genres, Amazon Transcribe's performed the best with Hip Pop music and it is most susceptible when applying to Rock music. The accuracy of retrieving correct lyrics depends on multiple regressors including bitrate, sample rate, genre of the song, and tempo of the song. The accuracy rate is on average is reported to be 40% on average. However, since our input data was compressed randomly, they have various quality of bitrate and sample rate. Normally, audio we obtain through online resources have relative high quality that their bitrates are typically in the range of 192k to 320 k and sample rate are higher than 44100. Thus, we believe the 75% percentile accuracy at 63.9% would be a good reference for a normal performance of Amazon Transcribe. A rate at 63.9% indicats a general reliability for retriving instant transcription, saving labor input and facilitating those who have difficulties hearing words appropriately.
 There are some limitations discovered when experimenting AWS Transcribe. First of all, the sample we used is not generalized enough -- we only tested Top 100 English Songs from Billboard over 7 years. Therefore, we don't know how accurate AWS Transcribe will retrieve lyrics for songs in other languages and for songs that are not as popular as Top 100 Billboard songs. Secondly, we only examined how 4 factors (bitrate, sample rate, genre of the song, and tempo of the song) relating to accuracy and we found that song tempo would not affect the accuracy largely. There might exist other factors that could be tested and explored to improve the accuracy of AWS Transcribe while transcribing lyrics. Lastly, we also postulate that AWS Transcribe may not be originally trained for retrieving lyrics given its performance of accuracy.
