@@ -1,4 +1,4 @@
-# Amazon Transcribe Sensitivity Analysis <img src="/images/aws.png" align="right" width=120 height=80 alt="" />
+# Amazon Transcribe Sensitivity Analysis <img src="/images/aws.png" align="right" width=120 height=70 alt="" />
 Audio is a clear form of communication, but transcripts reinforce it. In this blog post, we would show how Amazon Transcribe is used to improve your experience of listening to music with lyrics. In the following sections, we will utilize AWS services (SageMaker, S3 Storage Bucket) to conduct Sensitivity Analysis on Amazon Transcribe Machine Learning Model. We start with an overview of the AWS Transcribe function, explained how various data and songs are collected and analyze data, and discussed real-word application of AWS Transcribe that facilitates our day to day.
 
 ## Table of contents
