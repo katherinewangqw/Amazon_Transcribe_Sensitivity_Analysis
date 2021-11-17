@@ -20,8 +20,6 @@ Amazon Transcribe utilizes a deep learning process called automatic speech recog
 
 ![transcribelogo](/images/transcribe.png)
 
-<img src="/images/transcribe.png" align="center" alt="" />
-
 # Motivation and Aims of the Project
 
 When comparing Apple Music and Spotify, Apple music took the lead in its live lyrics feature, which provides an on-screen, karaoke-style feature. It is not until March 2021 did Spotify finally released the new lyrics feature on its platform, partnered with Genius and Musicmatch. However, as the new lyrics feature is still in its testing phase, it has not covered all the songs on the platform. Indeed, Spotify has been receiving complaints from users that they cannot access the lyrics completely. So, unfortunately, users have to wait for the new real-time lyrics feature to catch up with the great amount of music available on the platform.
